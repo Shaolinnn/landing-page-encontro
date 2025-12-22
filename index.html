@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontro Estratégico SPQ | Kyrlla</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        spq: {
+                            orange: '#ea580c', // Orange-600
+                            dark: '#09090b',   // Zinc-950
+                            card: '#18181b',   // Zinc-900
+                            text: '#d4d4d8',   // Zinc-300
+                        },
+                        cta: {
+                            base: '#dc2626',   // Red-600
+                            hover: '#b91c1c',  // Red-700
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Ajustes finos para suavidade */
+        html { scroll-behavior: smooth; }
+        .faq-content { transition: max-height 0.3s ease-out; max-height: 0; overflow: hidden; }
+        .faq-active .faq-content { max-height: 500px; }
+        .faq-icon { transition: transform 0.3s ease; }
+        .faq-active .faq-icon { transform: rotate(180deg); }
+    </style>
+</head>
+<body class="bg-spq-dark text-spq-text antialiased selection:bg-spq-orange selection:text-white pb-24 md:pb-0">
+
+    <div class="bg-spq-orange text-white text-center py-2 text-xs font-bold uppercase tracking-wider">
+        ⚠️ Vagas extremamente limitadas (Agenda Pessoal da Kyrlla)
+    </div>
+
+    <header class="relative overflow-hidden pt-12 pb-16 lg:pt-20 lg:pb-24 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
+                Chega de estudar no escuro: <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500">
+                    Vou desenhar o seu Mapa da Aprovação.
+                </span>
+            </h1>
+            <p class="text-lg md:text-xl text-zinc-400 mb-8 max-w-2xl mx-auto leading-relaxed">
+                Uma sessão estratégica individual para validar sua rota, corrigir falhas invisíveis e garantir que cada hora do seu estudo te coloque dentro da vaga.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#checkout-hotmart" class="bg-cta-base hover:bg-cta-hover text-white font-bold py-4 px-8 rounded-lg text-lg shadow-[0_0_20px_rgba(220,38,38,0.5)] transition-all transform hover:scale-105 animate-pulse">
+                    QUERO GARANTIR MEU ENCONTRO
+                </a>
+            </div>
+            <p class="mt-4 text-xs text-zinc-500">Compra 100% Segura • Acesso Imediato à Agenda</p>
+        </div>
+    </header>
+
+    <section class="bg-spq-card border-y border-zinc-800 py-16 px-4">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="font-display text-2xl md:text-3xl text-white font-bold mb-6">
+                Você tem o material, tem a vontade... <span class="text-cta-base">mas a conta não fecha.</span>
+            </h2>
+            <div class="space-y-4 text-left md:text-center text-zinc-300">
+                <p>A pior sensação do concurseiro não é o cansaço. É a <strong>dúvida</strong>.</p>
+                <p>Você senta para estudar, mas no fundo, uma voz pergunta: <em>"Será que estou focando no que cai? Será que meu cronograma faz sentido? E se eu estiver perdendo tempo?"</em></p>
+                <p class="font-semibold text-white pt-4">Isso é o "Ponto Cego do Estudante".</p>
+                <p>O problema não é falta de esforço. É falta de <strong>direção estratégica</strong>.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-spq-orange font-bold tracking-widest text-sm uppercase">O Jogo Vira Agora</span>
+                <h2 class="font-display text-3xl md:text-4xl text-white font-bold mt-2">Encontro Estratégico SPQ</h2>
+                <p class="mt-4 text-zinc-400">Não é curso gravado. É mentoria "olho no olho" para:</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl hover:border-spq-orange/50 transition duration-300">
+                    <div class="text-4xl mb-4">📍</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Diagnosticar seu Momento</h3>
+                    <p class="text-sm text-zinc-400">Vou entender exatamente onde você está travando e por que sua nota estagnou.</p>
+                </div>
+                <div class="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl hover:border-spq-orange/50 transition duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-spq-orange text-white text-[10px] font-bold px-2 py-1 rounded-bl-lg">CORE</div>
+                    <div class="text-4xl mb-4">🗺️</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Traçar a Rota</h3>
+                    <p class="text-sm text-zinc-400">Criação ou ajuste fino do seu cronograma baseado na sua realidade real (trabalho x estudo).</p>
+                </div>
+                <div class="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl hover:border-spq-orange/50 transition duration-300">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Validar o Método</h3>
+                    <p class="text-sm text-zinc-400">Vou te dizer exatamente o que manter e o que descartar da sua rotina atual.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-16 px-4">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/2">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-spq-orange transform translate-x-3 translate-y-3 rounded-xl"></div>
+                    <img src="img/Kyrlla-2.webp" alt="Mentora Kyrlla" class="relative rounded-xl shadow-xl w-full border border-zinc-200">
+                </div>
+            </div>
+            
+            <div class="w-full md:w-1/2 text-zinc-800">
+                <h2 class="font-display text-3xl font-bold mb-4">Por que confiar a sua rota a mim?</h2>
+                <p class="mb-4 text-zinc-600 leading-relaxed">
+                    Eu sou a <strong>Kyrlla</strong>. Criei o Sistema SPQ e o DAQ Essencial porque cansei de ver gente boa reprovando por falta de estratégia.
+                </p>
+                <p class="mb-4 text-zinc-600 leading-relaxed">
+                    Já ajudei centenas de alunos a saírem do "limbo dos 60%" para a aprovação nas áreas Policiais, Administrativas e Tribunais.
+                </p>
+                <p class="font-bold text-spq-orange text-lg">
+                    "Meu trabalho aqui não é te dar aula de matéria, é te ensinar a passar."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-4 text-center">
+        <div class="max-w-3xl mx-auto bg-zinc-900 border border-zinc-700 rounded-3xl p-8 md:p-12 shadow-2xl relative">
+            <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-spq-orange text-white px-6 py-2 rounded-full font-bold shadow-lg text-sm uppercase tracking-wide">
+                Condição Exclusiva
+            </div>
+
+            <h2 class="font-display text-2xl md:text-3xl text-white font-bold mb-2">
+                Quanto custa ter certeza da aprovação?
+            </h2>
+            <p class="text-zinc-400 mb-8 text-sm">Uma hora técnica de consultoria isolada custaria R$ 900,00.</p>
+
+            <div class="mb-8">
+                <span class="block text-zinc-500 text-lg line-through">De R$ 597,00</span>
+                <div class="flex justify-center items-baseline gap-1">
+                    <span class="text-2xl text-white">Por</span>
+                    <span class="text-5xl md:text-6xl font-black text-white">R$ 367</span>
+                    <span class="text-xl text-white">,00</span>
+                </div>
+                <p class="text-spq-orange font-semibold mt-2">À vista ou parcelado no cartão</p>
+            </div>
+
+            <a href="#checkout-hotmart" class="block w-full bg-cta-base hover:bg-cta-hover text-white font-bold py-5 px-6 rounded-xl text-xl shadow-lg transition-transform transform hover:-translate-y-1 mb-4">
+                QUERO AGENDAR MINHA MENTORIA
+            </a>
+            
+            <div class="flex justify-center items-center gap-4 text-xs text-zinc-500 mt-6">
+                <span class="flex items-center gap-1">🔒 Pagamento Seguro</span>
+                <span class="flex items-center gap-1">📅 Agendamento Flexível</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-3xl mx-auto px-4 py-16 mb-12">
+        <h2 class="text-center font-display text-2xl font-bold text-white mb-10">Perguntas Frequentes</h2>
+        
+        <div class="space-y-4">
+            <div class="faq-item bg-zinc-900 rounded-lg border border-zinc-800 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
+                <div class="flex justify-between items-center p-5">
+                    <h3 class="font-bold text-zinc-100">Serve para quem está começando do zero?</h3>
+                    <span class="faq-icon text-spq-orange text-xl">▼</span>
+                </div>
+                <div class="faq-content bg-zinc-800/50">
+                    <p class="p-5 text-zinc-300 text-sm">Sim! É o melhor momento, pois você já começa sem vícios errados de estudo, economizando meses (ou anos) de preparação errada.</p>
+                </div>
+            </div>
+
+            <div class="faq-item bg-zinc-900 rounded-lg border border-zinc-800 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
+                <div class="flex justify-between items-center p-5">
+                    <h3 class="font-bold text-zinc-100">Como funciona o agendamento?</h3>
+                    <span class="faq-icon text-spq-orange text-xl">▼</span>
+                </div>
+                <div class="faq-content bg-zinc-800/50">
+                    <p class="p-5 text-zinc-300 text-sm">Você receberá um link onde terá acesso aos horários disponíveis de acordo com minha agenda.</p>
+                </div>
+            </div>
+
+            <div class="faq-item bg-zinc-900 rounded-lg border border-zinc-800 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
+                <div class="flex justify-between items-center p-5">
+                    <h3 class="font-bold text-zinc-100">Quanto tempo dura a sessão?</h3>
+                    <span class="faq-icon text-spq-orange text-xl">▼</span>
+                </div>
+                <div class="faq-content bg-zinc-800/50">
+                    <p class="p-5 text-zinc-300 text-sm">A sessão tem duração média de 45 a 60 minutos, tempo suficiente para diagnosticar, mapear e resolver seus principais gargalos.</p>
+                </div>
+            </div>
+             <div class="faq-item bg-zinc-900 rounded-lg border border-zinc-800 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
+                <div class="flex justify-between items-center p-5">
+                    <h3 class="font-bold text-zinc-100">É presencial ou online?</h3>
+                    <span class="faq-icon text-spq-orange text-xl">▼</span>
+                </div>
+                <div class="faq-content bg-zinc-800/50">
+                    <p class="p-5 text-zinc-300 text-sm">100% Online (Google Meet ou Zoom), para você fazer de onde estiver com conforto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-center py-8 border-t border-zinc-900 text-zinc-600 text-sm px-4">
+        <p>&copy; 2024 Kyrlla - Encontro Estratégico SPQ. Todos os direitos reservados.</p>
+    </footer>
+
+    <div class="md:hidden fixed bottom-0 left-0 w-full bg-zinc-900 border-t border-zinc-700 p-4 shadow-2xl z-50">
+        <a href="#checkout-hotmart" class="block w-full bg-cta-base text-white text-center font-bold py-3 rounded-lg shadow-lg">
+            QUERO MEU ENCONTRO AGORA
+        </a>
+    </div>
+
+    <script>
+        function toggleFaq(element) {
+            // Fecha todos os outros
+            const allItems = document.querySelectorAll('.faq-item');
+            allItems.forEach(item => {
+                if (item !== element) {
+                    item.classList.remove('faq-active');
+                }
+            });
+            // Alterna o atual
+            element.classList.toggle('faq-active');
+        }
+    </script>
+</body>
+</html>
