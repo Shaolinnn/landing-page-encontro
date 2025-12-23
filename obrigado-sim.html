@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabéns! | Kyrlla Pattyelly</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Montserrat', 'sans-serif'] },
+                    colors: {
+                        spq: { orange: '#ea580c', dark: '#09090b', card: '#18181b', text: '#d4d4d8' },
+                        success: '#16a34a' // Verde para sucesso
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-spq-dark text-spq-text flex flex-col min-h-screen">
+
+    <header class="py-6 text-center border-b border-zinc-800">
+        <h1 class="font-display text-2xl font-bold text-white tracking-widest uppercase">Kyrlla Pattyelly</h1>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center p-4">
+        <div class="max-w-2xl w-full bg-spq-card border border-zinc-700 rounded-3xl p-8 md:p-12 text-center shadow-2xl">
+            
+            <div class="mb-6 inline-flex items-center justify-center w-20 h-20 bg-success/20 rounded-full text-success text-5xl animate-bounce">
+                ✓
+            </div>
+
+            <h2 class="font-display text-3xl md:text-4xl text-white font-bold mb-4">
+                Parabéns! Sua vaga está garantida.
+            </h2>
+            <p class="text-zinc-400 text-lg mb-8">
+                Você acaba de dar o passo mais importante para sua aprovação. O <strong>Encontro Estratégico</strong> é seu.
+            </p>
+
+            <div class="bg-zinc-900 rounded-xl p-6 mb-8 text-left border border-zinc-800">
+                <p class="text-xs font-bold text-zinc-500 uppercase tracking-wide mb-4">Resumo do seu Acesso:</p>
+                
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3 text-white opacity-50">
+                        <span class="text-success">✔</span>
+                        <span class="line-through decoration-zinc-500">DAQ Essencial / Acelerador</span>
+                    </li>
+                    <li class="flex items-center gap-3 text-white font-bold bg-zinc-800 p-3 rounded-lg border border-success/30 shadow-[0_0_15px_rgba(22,163,74,0.2)]">
+                        <span class="text-success text-xl">✔</span>
+                        <span>Encontro Estratégico SPQ</span>
+                        <span class="ml-auto text-xs bg-success text-white px-2 py-1 rounded">CONFIRMADO</span>
+                    </li>
+                </ul>
+            </div>
+            <p class="text-xs text-zinc-500">Verifique também seu e-mail, enviamos os dados de acesso por lá.</p>
+        </div>
+    </main>
+</body>
+</html>

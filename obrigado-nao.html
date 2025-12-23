@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso Liberado | Kyrlla Pattyelly</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Montserrat', 'sans-serif'] },
+                    colors: {
+                        spq: { orange: '#ea580c', dark: '#09090b', card: '#18181b', text: '#d4d4d8' },
+                        blue: '#3b82f6' // Azul para "informação/neutro"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-spq-dark text-spq-text flex flex-col min-h-screen">
+
+    <header class="py-6 text-center border-b border-zinc-800">
+        <h1 class="font-display text-2xl font-bold text-white tracking-widest uppercase">Kyrlla Pattyelly</h1>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center p-4">
+        <div class="max-w-xl w-full bg-spq-card border border-zinc-700 rounded-3xl p-8 md:p-12 text-center shadow-2xl">
+            
+            <div class="mb-6 inline-flex items-center justify-center w-16 h-16 bg-blue-500/20 rounded-full text-blue-500 text-3xl">
+                🔓
+            </div>
+
+            <h2 class="font-display text-2xl md:text-3xl text-white font-bold mb-4">
+                Pedido Finalizado com Sucesso!
+            </h2>
+            <p class="text-zinc-400 text-sm mb-8">
+                Entendido. Você optou por seguir sem o acompanhamento individual agora. Seu acesso aos materiais adquiridos anteriormente já foi liberado.
+            </p>
+
+            <div class="bg-zinc-900 rounded-xl p-6 mb-8 text-left border border-zinc-800">
+                <p class="text-xs font-bold text-zinc-500 uppercase tracking-wide mb-4">Status da sua conta:</p>
+                
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3 text-white">
+                        <span class="text-green-500">✔</span>
+                        <span class="font-semibold">DAQ Essencial + Acelerador SPQ</span>
+                    </li>
+                    
+                    <li class="flex items-center gap-3 text-zinc-600">
+                        <span class="text-zinc-600 font-bold">✕</span>
+                        <span class="line-through">Encontro Estratégico SPQ</span>
+                        <span class="ml-auto text-[10px] border border-zinc-700 text-zinc-600 px-2 py-0.5 rounded">NÃO ADQUIRIDO</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="space-y-3">
+                <p class="text-xs text-zinc-500">
+                    Seus dados de acesso foram enviados para o seu e-mail cadastrado.
+                </p>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
