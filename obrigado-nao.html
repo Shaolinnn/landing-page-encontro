@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acesso Liberado | Kyrlla Pattyelly</title>
+    
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -13,11 +19,28 @@
                     fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Montserrat', 'sans-serif'] },
                     colors: {
                         spq: { orange: '#ea580c', dark: '#09090b', card: '#18181b', text: '#d4d4d8' },
-                        blue: '#3b82f6' // Azul para "informação/neutro"
+                        blue: '#3b82f6',
+                        danger: '#ef4444' // Vermelho para item cancelado
                     }
                 }
             }
         }
+    </script>
+
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids async></script>
+    <script async src="https://t.contentsquare.net/uxa/8b9c231da4716.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D0YYSYX9YH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted' });
+        gtag('config', 'G-D0YYSYX9YH', { transport_type: 'beacon', anonymize_ip: true, allow_ad_personalization_signals: false, allow_google_signals: false, debug_mode: true });
+        gtag('config', 'AW-583505601', { transport_type: 'beacon' });
+    </script>
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '575682733921732'); fbq('track', 'PageView');
     </script>
 </head>
 <body class="bg-spq-dark text-spq-text flex flex-col min-h-screen">
@@ -34,36 +57,58 @@
             </div>
 
             <h2 class="font-display text-2xl md:text-3xl text-white font-bold mb-4">
-                Pedido Finalizado com Sucesso!
+                Acesso Liberado!
             </h2>
-            <p class="text-zinc-400 text-sm mb-8">
-                Entendido. Você optou por seguir sem o acompanhamento individual agora. Seu acesso aos materiais adquiridos anteriormente já foi liberado.
-            </p>
+            
+            <div class="bg-zinc-900/50 p-4 rounded-lg border border-zinc-700 mb-8">
+                <p class="text-zinc-300 text-sm leading-relaxed">
+                    <strong>Que pena que você não garantiu seu Encontro Estratégico agora...</strong> Teria sido um prazer desenhar seu mapa da aprovação pessoalmente.
+                </p>
+                <p class="text-white text-sm mt-3">
+                    Mas fique tranquilo: Você tomou uma excelente decisão entrando para o <strong>DAQ</strong> e o <strong>Acelerador</strong>! Seu acesso a esses materiais já está garantido.
+                </p>
+            </div>
 
             <div class="bg-zinc-900 rounded-xl p-6 mb-8 text-left border border-zinc-800">
                 <p class="text-xs font-bold text-zinc-500 uppercase tracking-wide mb-4">Status da sua conta:</p>
                 
-                <ul class="space-y-4">
-                    <li class="flex items-center gap-3 text-white">
-                        <span class="text-green-500">✔</span>
-                        <span class="font-semibold">DAQ Essencial + Acelerador SPQ</span>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3 text-white bg-zinc-800 p-3 rounded-lg border border-success/30 shadow-[0_0_10px_rgba(22,163,74,0.15)]">
+                        <span class="text-success text-xl">✔</span>
+                        <span class="font-bold">DAQ Essencial</span>
+                        <span class="ml-auto text-[10px] bg-success text-white px-2 py-1 rounded font-bold">CONFIRMADO</span>
                     </li>
                     
-                    <li class="flex items-center gap-3 text-zinc-600">
-                        <span class="text-zinc-600 font-bold">✕</span>
-                        <span class="line-through">Encontro Estratégico SPQ</span>
-                        <span class="ml-auto text-[10px] border border-zinc-700 text-zinc-600 px-2 py-0.5 rounded">NÃO ADQUIRIDO</span>
+                    <li class="flex items-center gap-3 text-white bg-zinc-800 p-3 rounded-lg border border-success/30 shadow-[0_0_10px_rgba(22,163,74,0.15)]">
+                        <span class="text-success text-xl">✔</span>
+                        <span class="font-bold">Acelerador SPQ</span>
+                        <span class="ml-auto text-[10px] bg-success text-white px-2 py-1 rounded font-bold">CONFIRMADO</span>
+                    </li>
+                    
+                    <li class="flex items-center gap-3 text-zinc-500 bg-zinc-950 p-3 rounded-lg border border-danger/20 opacity-70 grayscale-[0.5]">
+                        <span class="text-danger font-bold text-lg">✕</span>
+                        <span class="font-medium line-through decoration-danger/50">Encontro Estratégico SPQ</span>
+                        <span class="ml-auto text-[10px] border border-danger text-danger px-2 py-1 rounded font-bold">NÃO ADQUIRIDO</span>
                     </li>
                 </ul>
             </div>
 
             <div class="space-y-3">
-                <p class="text-xs text-zinc-500">
+                <p class="text-xs text-zinc-500 mb-4">
                     Seus dados de acesso foram enviados para o seu e-mail cadastrado.
                 </p>
             </div>
 
         </div>
     </main>
+    
+    <script id="hotmart-pixel" src="https://launcher.hotmart.com/launcher.js" async></script>
+    <script>
+        (function(l,a,u,n,c,h,e,r){l['HotmartLauncherObject']=c;l[c]=l[c]||function(){
+        (l[c].q=l[c].q||[]).push(arguments)},l[c].l=1*new Date();h=a.createElement(u),
+        e=a.getElementsByTagName(u)[0];h.async=1;h.src=n;e.parentNode.insertBefore(h,e)
+        })(window,document,'script','//launcher.hotmart.com/launcher.js','hot');
+        hot('account','724d6454-843f-36de-9666-c2bc235cd7be');
+    </script>
 </body>
 </html>
