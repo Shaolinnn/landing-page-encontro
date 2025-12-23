@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encontro Estratégico SPQ | Kyrlla Pattyelly</title>
     
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
     
     <script src="https://cdn.tailwindcss.com"></script>
-    
     <script>
         tailwind.config = {
             theme: {
@@ -37,16 +38,71 @@
     </script>
 
     <style>
-        /* Ajustes finos para suavidade */
         html { scroll-behavior: smooth; }
         .faq-content { transition: max-height 0.3s ease-out; max-height: 0; overflow: hidden; }
         .faq-active .faq-content { max-height: 500px; }
         .faq-icon { transition: transform 0.3s ease; }
         .faq-active .faq-icon { transform: rotate(180deg); }
-        
-        /* Ajuste para o Widget da Hotmart se necessário */
         #hotmart-sales-funnel { width: 100%; min-height: 200px; }
     </style>
+
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids async></script>
+
+    <script async src="https://t.contentsquare.net/uxa/8b9c231da4716.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D0YYSYX9YH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        // Configurações de Consentimento
+        gtag('consent', 'default', {
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            analytics_storage: 'granted'
+        });
+
+        // Configuração do GA4
+        gtag('config', 'G-D0YYSYX9YH', {
+            transport_type: 'beacon',
+            anonymize_ip: true,
+            allow_ad_personalization_signals: false,
+            allow_google_signals: false,
+            debug_mode: true,
+            linker: {
+                domains: [
+                    "destruindoasquestoes.com.br",
+                    "www.destruindoasquestoes.com.br",
+                    "bit.ly",
+                    "l.wl.co",
+                    "hotmart.com"
+                ],
+                decoration: 'linker'
+            }
+        });
+
+        // Configuração do Google Ads
+        gtag('config', 'AW-583505601', { transport_type: 'beacon' });
+    </script>
+
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '575682733921732');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=575682733921732&ev=PageView&noscript=1" /></noscript>
+
+    <script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
+    
 </head>
 <body class="bg-spq-dark text-spq-text antialiased selection:bg-spq-orange selection:text-white pb-24 md:pb-0">
 
@@ -83,9 +139,7 @@
             <div class="space-y-4 text-left md:text-center text-zinc-300">
                 <p>A pior sensação do concurseiro não é o cansaço. É a <strong>dúvida</strong>.</p>
                 <p>Você senta para estudar, mas no fundo, uma voz pergunta: <em>"Será que estou focando no que cai? Será que meu cronograma faz sentido? E se eu estiver perdendo tempo?"</em></p>
-                
                 <p class="font-semibold text-white pt-4">Isso é o "Ponto Cego do Concurseiro".</p>
-                
                 <p>O problema não é falta de esforço. É falta de <strong>direção estratégica</strong>.</p>
             </div>
         </div>
@@ -156,9 +210,8 @@
             <p class="text-zinc-400 mb-8 text-sm">Uma hora técnica de consultoria isolada custaria R$ 900,00.</p>
 
             <div class="bg-black/20 rounded-xl p-4 min-h-[250px] flex items-center justify-center">
-                
                 <div id="hotmart-sales-funnel"></div>
-                </div>
+            </div>
             
             <div class="flex justify-center items-center gap-4 text-xs text-zinc-500 mt-6">
                 <span class="flex items-center gap-1">🔒 Pagamento Seguro</span>
@@ -177,10 +230,9 @@
                     <span class="faq-icon text-spq-orange text-xl">▼</span>
                 </div>
                 <div class="faq-content bg-zinc-800/50">
-                    <p class="p-5 text-zinc-300 text-sm">Sim! É o melhor momento, pois você já começa sem vícios errados de estudo, economizando meses (ou anos) de preparação errada.</p>
+                    <p class="p-5 text-zinc-300 text-sm">Sim! É o melhor momento, pois você já começa sem vícios errados de estudo.</p>
                 </div>
             </div>
-
             <div class="faq-item bg-zinc-900 rounded-lg border border-zinc-800 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
                 <div class="flex justify-between items-center p-5">
                     <h3 class="font-bold text-zinc-100">Como funciona o agendamento?</h3>
@@ -190,7 +242,6 @@
                     <p class="p-5 text-zinc-300 text-sm">Você receberá um link onde terá acesso aos horários disponíveis de acordo com minha agenda.</p>
                 </div>
             </div>
-
             <div class="faq-item bg-zinc-900 rounded-lg border border-zinc-800 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
                 <div class="flex justify-between items-center p-5">
                     <h3 class="font-bold text-zinc-100">Quanto tempo dura a sessão?</h3>
@@ -200,7 +251,7 @@
                     <p class="p-5 text-zinc-300 text-sm">A sessão tem duração média de 45 a 60 minutos, tempo suficiente para diagnosticar, mapear e resolver seus principais gargalos.</p>
                 </div>
             </div>
-             <div class="faq-item bg-zinc-900 rounded-lg border border-zinc-800 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
+            <div class="faq-item bg-zinc-900 rounded-lg border border-zinc-800 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
                 <div class="flex justify-between items-center p-5">
                     <h3 class="font-bold text-zinc-100">É presencial ou online?</h3>
                     <span class="faq-icon text-spq-orange text-xl">▼</span>
@@ -225,18 +276,23 @@
     <script>
         function toggleFaq(element) {
             const allItems = document.querySelectorAll('.faq-item');
-            allItems.forEach(item => {
-                if (item !== element) {
-                    item.classList.remove('faq-active');
-                }
-            });
+            allItems.forEach(item => { if (item !== element) { item.classList.remove('faq-active'); } });
             element.classList.toggle('faq-active');
         }
     </script>
-
     <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
     <script>
         checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
     </script>
+
+    <script id="hotmart-pixel" src="https://launcher.hotmart.com/launcher.js" async></script>
+    <script>
+        (function(l,a,u,n,c,h,e,r){l['HotmartLauncherObject']=c;l[c]=l[c]||function(){
+        (l[c].q=l[c].q||[]).push(arguments)},l[c].l=1*new Date();h=a.createElement(u),
+        e=a.getElementsByTagName(u)[0];h.async=1;h.src=n;e.parentNode.insertBefore(h,e)
+        })(window,document,'script','//launcher.hotmart.com/launcher.js','hot');
+        hot('account','724d6454-843f-36de-9666-c2bc235cd7be');
+    </script>
+
 </body>
 </html>
